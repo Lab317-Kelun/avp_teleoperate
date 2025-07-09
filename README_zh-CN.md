@@ -175,6 +175,7 @@ unitree@Host:~$ conda activate tv
 ```bash
 (tv) unitree@Host:~/avp_teleoperate$ mkcert -CAROOT
 ```
+这里需要使用**苹果设备隔空投送**，Apple Vision Pro上接受需要打开隔空投送(设置)，**后注视手掌，大拇指与食指闭合**，点击后即可接受。 
 
 通过 AirDrop 将 `rootCA.pem` 复制到 Apple Vision Pro 并安装它。
 
@@ -259,6 +260,7 @@ unitree@PC2:~/h1_inspire_service/build$ ./h1_hand_example
 
 首先，**操作员 B** 需要执行以下步骤：
 
+注意: 这里要开启 unitree@PC2:~/image_server$ python image_server.py 才可以传输图像
 1. 修改  `~/avp_teleoperate/teleop/teleop_hand_and_arm.py` 中 `if __name__ == '__main__':` 代码下方的 `img_config` 图像客户端配置，它应该与 3.1 节中您在 PC2 配置的图像服务器参数相同。
 
 2. 根据您的机器人配置选择不同的启动参数
