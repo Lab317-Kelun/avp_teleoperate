@@ -1,0 +1,7 @@
+package arm_msg;
+
+struct arm_action_lcmt
+{
+    double act[14];
+    double torques[14];
+}

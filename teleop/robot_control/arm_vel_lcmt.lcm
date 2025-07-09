@@ -1,0 +1,10 @@
+package arm_vel;
+
+struct arm_vel_lcmt
+{
+    double vel_x;
+    double vel_y;
+    double height;
+    double yaw_rad;
+    double yaw_deg;
+}

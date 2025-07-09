@@ -1,0 +1,86 @@
+package msg_pkg;
+
+struct msg
+{
+    float vel_x;   //前进速度
+    float vel_y;   //横向速度
+    float height;  //高度
+    float yaw_rad; //转向速度(弧度制)
+    float yaw_deg; //转向速度(角度制)
+
+    float kLeftShoulderPitch_q; //左臂各关节角度
+    float kLeftShoulderRoll_q;
+    float kLeftShoulderYaw_q ;
+    float kLeftElbow_q;
+    float kLeftWristRoll_q;
+    float kLeftWristPitch_q;
+    float kLeftWristyaw_q;
+
+    float kLeftShoulderPitch_tau; //左臂各关节力矩
+    float kLeftShoulderRoll_tau;
+    float kLeftShoulderYaw_tau;
+    float kLeftElbow_tau;
+    float kLeftWristRoll_tau;
+    float kLeftWristPitch_tau;
+    float kLeftWristyaw_tau;
+
+    float kRightShoulderPitch_q; //右臂各关节角度
+    float kRightShoulderRoll_q;
+    float kRightShoulderYaw_q;
+    float kRightElbow_q;
+    float kRightWristRoll_q;
+    float kRightWristPitch_q;
+    float kRightWristYaw_q;
+
+    float kRightShoulderPitch_tau; //右臂各关节力矩
+    float kRightShoulderRoll_tau;
+    float kRightShoulderYaw_tau;
+    float kRightElbow_tau;
+    float kRightWristRoll_tau;
+    float kRightWristPitch_tau;
+    float kRightWristYaw_tau;
+
+}
+    /*
+        # 左腿
+        kLeftHipPitch = 0
+        kLeftHipRoll = 1
+        kLeftHipYaw = 2
+        kLeftKnee = 3
+        kLeftAnklePitch = 4
+        kLeftAnkleRoll = 5
+        # 右腿
+        kRightHipPitch = 6
+        kRightHipRoll = 7
+        kRightHipYaw = 8
+        kRightKnee = 9
+        kRightAnklePitch = 10
+        kRightAnkleRoll = 11
+        # 腰部
+        kWaistYaw = 12
+        kWaistRoll = 13
+        kWaistPitch = 14
+        # 左臂
+        kLeftShoulderPitch = 15
+        kLeftShoulderRoll = 16
+        kLeftShoulderYaw = 17
+        kLeftElbow = 18
+        kLeftWristRoll = 19
+        kLeftWristPitch = 20
+        kLeftWristyaw = 21
+        # 右臂
+        kRightShoulderPitch = 22
+        kRightShoulderRoll = 23
+        kRightShoulderYaw = 24
+        kRightElbow = 25
+        kRightWristRoll = 26
+        kRightWristPitch = 27
+        kRightWristYaw = 28
+        # 未使用
+        kNotUsedJoint0 = 29
+        kNotUsedJoint1 = 30
+        kNotUsedJoint2 = 31
+        kNotUsedJoint3 = 32
+        kNotUsedJoint4 = 33
+        kNotUsedJoint5 = 34
+    */
