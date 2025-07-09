@@ -139,7 +139,7 @@ unitree@Host:~$ conda activate tv
 
 ## 2.2 🔌 本地流媒体
 
-**Apple** 不允许在非 HTTPS 连接上使用 WebXR。要在本地测试应用程序，我们需要创建一个自签名证书并在客户端上安装它。您需要一台 Ubuntu 机器和一个路由器。将 Apple Vision Pro 和 Ubuntu **主机**连接到同一个路由器。
+**Apple** 不允许在非 HTTPS 连接上使用 WebXR。要在本地测试应用程序，我们需要创建一个自签名证书并在客户端上安装它。您需要一台 Ubuntu 机器和一个路由器。将 Apple Vision Pro 和 Ubuntu **主机**连接到同一个路由器。这里用港科广Wifi。
 
 1. 安装 mkcert：https://github.com/FiloSottile/mkcert
 2. 检查**主机**本地 IP 地址：
@@ -176,6 +176,7 @@ unitree@Host:~$ conda activate tv
 (tv) unitree@Host:~/avp_teleoperate$ mkcert -CAROOT
 ```
 这里需要使用**苹果设备隔空投送**，Apple Vision Pro上接受需要打开隔空投送(设置)，**后注视手掌，大拇指与食指闭合**，点击后即可接受。 
+这里建议学一下AVP的基本操作方式，网上很多简易教程。
 
 通过 AirDrop 将 `rootCA.pem` 复制到 Apple Vision Pro 并安装它。
 
